@@ -1,0 +1,17 @@
+#------------------------
+#
+#Fusion Fast Crystals
+#
+#Made by CurryMan, for Fusion Network
+#
+#------------------------
+
+
+#MESSAGES
+
+messages:
+  toggleOn: "&aFusionFastCrystal has been toggled ON"
+  toggleOff: "&cFusionFastCrystal has been toggled OFF"
+  reload: "&6FusionFastCrystal configuration reloaded."
+  noPerms: "&4You do not have permission to reload the configuration"
+  unknownCommand: "&cUnknown command or usage. Use /ffc for help"

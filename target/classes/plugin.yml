@@ -1,0 +1,11 @@
+name: FusionFastCrystal
+version: '1.0'
+main: org.curryman.fusionfastcrystal.FusionFastCrystal
+api-version: '1.19'
+commands:
+  ffc:
+    description: Main command for Fusion Fast Crystals
+permissions:
+  ffc.reload:
+    description: Reload the plugin
+    default: op
