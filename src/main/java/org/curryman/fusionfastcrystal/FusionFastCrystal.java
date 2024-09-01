@@ -107,10 +107,14 @@ public final class FusionFastCrystal extends JavaPlugin {
         Player sender = getServer().getPlayer(playerId);
         if (isPlayerDisabled(playerId)) {
             disabledPlayers.remove(playerId);
-            sender.sendMessage(getMessage("toggleOn"));
+            if (sender != null) {
+                sender.sendMessage(getMessage("toggleOn"));
+            }
         } else {
             disabledPlayers.add(playerId);
-            sender.sendMessage(getMessage("toggleOff"));
+            if (sender != null) {
+                sender.sendMessage(getMessage("toggleOff"));
+            }
         }
     }
     public void reloadPlugin() {
@@ -147,6 +151,7 @@ public final class FusionFastCrystal extends JavaPlugin {
             if (args[0].equalsIgnoreCase("reload")) {
                 if (sender.hasPermission("fusionfastcrystal.reload")) {
                     reloadPlugin();
+                    sender.sendMessage(getMessage("reload"));
                 } else {
                     sender.sendMessage(getMessage("noPerms"));
                 }
